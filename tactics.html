@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title> Chess_Tactics </title>
+</head>
+<link rel="stylesheet" href="tastyle.css">
+
+<body style="background-color:#393e46;">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+	<script>
+		var mybutton = document.getElementById("myBtn");
+
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+	<ul>
+		<bl><a href="index.html">Home</a></bl>
+		<bl><a href="rulesofgame.html">Game Rules</a></bl>
+		<bl><a href="notation.html">Notation</a></bl>
+		<bl><a class="active" href="tactics.html">Tactics</a></bl>
+		<bl><a href="playchess.html">Play Chess</a></bl>
+		<bl><a href="signup.html">Sign Up</a></bl>
+	</ul>
+
+	<h1><b><U>Tactics</U></b> </h1>
+	<h3> Tactics are moves that win material i.e capture pieces by either threatening more than one piece at once or by
+		taking a piece that your opponent cannot safely recapture.</h3>
+	<br><br>
+	<table table border=0 cellspacing=1>
+		<tr>
+			<td>
+				<figure>
+					<img src="Pics\Fork.jpg" alt="Example of a fork" width="400" height="400">
+					<figcaption>Forks</figcaption>
+				</figure>
+			</td>
+
+			<td>
+				<p class="border" ; font-size: 60px> Fork involves attacking
+					two pieces at the same time with one of your pieces. Only one of the
+					opponent's pieces can move at a time so you can capture the piece that didn't move. Knights are the
+					most common forking piece.
+				</p>
+			</td>
+		</tr>
+	</table>
+	<br><br>
+
+
+	<table table border=0 cellspacing=1>
+		<tr>
+			<td>
+				<figure>
+					<img src="Pics\Pin.jpg" alt="Example of a pin" width="400" height="400">
+					<figcaption>Pins</figcaption>
+				</figure>
+			</td>
+
+			<td>
+				<p class="border" ; font-size: 30px>A pin is when you attack a piece but the piece cannot move without
+					exposing
+					a more valuable piece behind it. The pinned piece can then be attacked by a less
+					valuable piece, like a pawn, or more attackers can be added until the pinned piece cannot be
+					defended anymore.
+					piece.
+				</p>
+			</td>
+		</tr>
+	</table>
+	<br><br>
+
+
+	<table table border=0 cellspacing=1>
+		<tr>
+			<td>
+				<figure>
+					<img src="Pics\Discovered_Check.jpg" alt="Discovered check example" width="400" height="400">
+					<figcaption>Discovered Attack/Check</figcaption>
+				</figure>
+			</td>
+
+			<td>
+				<p class="border" ; font-size: 30px> A discovered attack is when one piece that is blocking
+					another moves so that both pieces are threatening the opponent. In a discovered attack, the piece
+					that is initially blocked does
+					not check the king, but in a discovered check, it does.
+				</p>
+			</td>
+		</tr>
+	</table>
+	<br><br>
+
+
+	<table table border=0 cellspacing=1>
+		<td>
+			<figure>
+				<img src="Pics\Double_Check.jpg" alt="Double check example" width="400" height="400">
+				<figcaption>Double Check</figcaption>
+			</figure>
+		</td>
+
+		<td>
+			<p class="border" ; font-size: 30px>
+				In a double check, both the piece that moves and the piece that is uncovered
+				give check. This prevents your opponent from blocking the check or taking one of the pieces
+				giving
+				check because there would still be the other piece
+				giving check. The only way to get out of it is to move the king.
+			</p>
+		</td>
+		</tr>
+	</table>
+	<br><br>
+
+
+	<table table border=0 cellspacing=1>
+		<tr>
+			<td>
+				<figure>
+					<img src="Pics\BishopPair.jpg" alt="Bishop pair example" width="400" height="400">
+					<figcaption>Bishop Pair</figcaption>
+				</figure>
+			</td>
+
+			<td>
+				<p class="border"> The bishop pair is a strategic concept. . The bishops are
+					able
+					to control many squares on both colors . This advantage is
+					useful in the middlegame but is most pronounced in the endgame such as in the example position.
+				</p>
+			</td>
+		</tr>
+	</table>
+	<br><br>
+
+
+	<table table border=0 cellspacing=1>
+		<tr>
+			<td>
+				<figure>
+					<img src="Pics\OpenFile.jpg" alt="Open file example" width="400" height="400">
+					<figcaption>Open Files</figcaption>
+				</figure>
+			</td>
+
+			<td>
+				<p class="border"> An open file is a file
+					with no pawns
+					on it.You can gain control of an
+					open
+					file by placing a rook at your end of it. The benefit of
+					controlling
+					the
+					open file is that you can move your major pieces into your opponent's side of the board to attack
+					their pieces
+					and pawns.
+				</p>
+			</td>
+		</tr>
+	</table>
+	<br><br>
+
+
+	<table table border=0 cellspacing=1>
+		<tr>
+			<td>
+				<figure>
+					<img src="Pics\Castling.jpg" alt="Castling" align="left" width="400" height="400">
+					<figcaption>Castling</figcaption>
+				</figure>
+			</td>
+
+			<td>
+				<p class="border" ; font-size: 30px> Rooks play a part in an important special move
+					along with the king: castling. You can castle either to the kingside or the
+					queenside. In order
+					to castle, a few conditions must be met. First, you cannot be in check. Second, your
+					king and whichever rook you castle with must not have moved
+					during the entire game up to that point. Third, there must be no pieces in between
+					the king and castling rook. In addition, you cannot "castle through check"
+					which means that no enemy piece can be
+					threatening either of the two squares that the king moves through.
+					Castling is a very important move which is played by both sides in the vast majority
+					of games. It gets your king to safety
+					on the side of the board and centralizes a rook at the same time.
+			</td>
+		</tr>
+	</table>
+	<br><br>
+
+
+	<table table border=0 cellspacing=1>
+		<tr>
+			<td>
+				<figure>
+					<img src="Pics\ActiveKing.jpg" alt="Active king example" width="400" height="400">
+					<figcaption>Centralizing the King</figcaption>
+				</figure>
+			</td>
+
+			<td>
+				<p class="border"> In the endgame, especially if each side only has a rook or minor pieces, king
+					activity is very
+					important. The king becomes an important attacking piece and king activity can be the difference
+					between
+					victory and defeat.
+				</p>
+			</td>
+		</tr>
+	</table>
+	</tr>
+	<br><br>
+
+	<center>
+		<br><br><br>
+		<!--Copyright info-->
+		<hr>
+		<footer>
+			<p style="color: #eeeeee; font-size: 15px;">&copy; 2020 CHESS</p>
+			<p style="color: #eeeeee; font-size: 15px;">Contact us : 022 2363 2876</p>
+
+			<p style="color: #eeeeee; font-size: 15px;"><a href="index.html"
+					style="font-size: 15px; text-align: center; color : #32e0c4; font-weight: light;">Home Page</a></p>
+		</footer>
+	</center>
+</body>
+
+</html>

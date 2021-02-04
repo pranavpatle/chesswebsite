@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title> Chess_Rules </title>
+</head>
+<link rel="stylesheet" href="rustyle.css">
+<div margin:20px>
+
+	<body style="background-color:#393e46;">
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<script>
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function () { scrollFunction() };
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+
+		<ul>
+			<bl><a href="index.html">Home</a></bl>
+			<bl><a class="active" href="rulesofgame.html">Game Rules</a></bl>
+			<bl><a href="notation.html">Notation</a></bl>
+			<bl><a href="tactics.html">Tactics</a></bl>
+			<bl><a href="playchess.html">Play Chess</a></bl>
+			<bl><a href="signup.html">Sign Up</a></bl>
+
+		</ul>
+
+		<h1><u><b>
+					<center>The Rules of the Game</center></u></b></h1>
+
+		<h3>One player plays with the white pieces and the other player plays with the black pieces. White gets to move
+			first and then the players alternate moves. The game ends either in a draw or with one
+			player checkmating the other and winning the game. The players can also agree
+			to a draw in the middle of a game or one player can resign (give up) if he
+			knows he will lose.
+			<br><br>
+
+			The game is generally divided into three phases: the opening, the middlegame, and the
+			endgame. In the opening, you want to move your pieces out to good
+			squares in preparation for the middlegame. You also want to make sure your king is safe, usually by
+			castling.
+			In the middlegame, players fight for the advantage and sometimes try to checkmate each other. In the
+			endgame, promoting pawns is usually
+			the goal players aim for.
+		</h3>
+		<h3>
+
+			<dl><u><b>
+						<center>Check</center>
+					</b></u></dl>
+
+			<dl>
+				<p> Check is when you move a piece so that it threatens to take your opponent's
+					king the next turn. Your opponent must stop the check by either moving their king, blocking the
+					check
+					with another piece, or capturing the piece that is checking. </p>
+			</dl>
+
+			<dl><u><b>
+						<center> Checkmate</center>
+					</b> </u></dl>
+
+			<dl>
+				<p>Checkmate occurs when one player is threatening to take their opponent's king
+					and their opponent cannot prevent it by making a legal move. If you checkmate your opponent, you
+					win.
+				</p>
+			</dl>
+
+			<dl><u><b>
+						<center> Draws </center>
+					</b></u></dl>
+
+			<dl>
+				<p> There are four ways a draw can happen.</p>
+			</dl>
+
+			<ol>
+				<li>The players can agree to a draw. </li>
+				<li>Three move repetition. That is when the exact same position occurs on the board three times.</li>
+				<li>Stalemate. Stalemate occurs when one player has no legal move on their turn
+					and they are not in check.</li>
+				<li> The 50 move rule.
+					That is when 50 moves are made without a pawn moving or a piece being captured. </li>
+			</ol>
+
+		</h3><br><br>
+
+		<h1><u><b>
+					<center> The Board and the Pieces </center></u></b></h1>
+
+		<h3> A chessboard has 64 squares that alternate black (dark) and white (light). The rows are called 'ranks' and
+			are
+			numbered from 1 to 8. The white pieces start on the first and second ranks while the black pieces start on
+			the seventh
+			and eighth ranks. The columns are called "files" and are ordered from 'a' to 'h'. The a file is on white's
+			left
+			and black's right.
+			<br>
+
+			Each player has eight pawns, two rooks, two knights,
+			two bishops, one queen, and one king. Knights and bishops are called minor pieces while rooks and the queen
+			are called major pieces.
+			<br><br>
+
+			The pieces are arranged like this:
+			<br><br>
+
+			<center>
+				<img src="Pics\p1.png" style="width:450px">
+			</center>
+			<br> <br>
+
+			<h1><u><b>
+						<center>In-Depth Summary</center></u></b>
+				<h1>
+
+
+					<table table border=0 cellspacing=1>
+						<tr>
+							<td>
+								<figure>
+									<img src="Pics\Pawn-moves.jpg" alt="How a pawn moves" align="left" height="400"
+										width="400">
+									<figcaption>Pawns(1 point)</figcaption>
+									<figure>
+							</td>
+
+							<td>
+								<p class="border" ; font-size: 30px>
+									Pawns can move one square forward
+									unless they are on their starting square, in this case they can move either one or
+									two squares forward. But they capture other pieces by moving diagonally forward to
+									the left or right.
+									<b>Promotion :</b>If your pawn reaches the back rank of your opponent, it
+									promotes immediately into any other piece of your choice.
+									<b>en passant :</b> This move can only be performed by a white pawn on the
+									fifth rank or a black
+									pawn on the fourth rank.
+								</p>
+							</td>
+						</tr>
+					</table>
+					<br>
+
+
+					<table table border=0 cellspacing=1>
+						<tr>
+							<td>
+								<figure>
+									<img src="Pics\Knight-moves.jpg" alt="How a knight moves" align="left" width="400"
+										height="400">
+									<figcaption>Knights(3 points)</figcaption>
+								</figure>
+							</td>
+
+							<td>
+								<p class="border" ; font-size: 30px> Knights are a minor piece .
+									They move in an 'L' shape: two squares in one direction
+									and one square left or right. Unlike pawns, they can move in any direction. They
+									also have the unique ability
+									of being able to jump over other pieces. This allows knights to reach squares that
+									might be hard for other
+									pieces to get to. They are
+									therefore most effective in
+									the middle of the board.
+								</p>
+							</td>
+						</tr>
+					</table>
+					<br><br>
+
+
+					<table table border=0 cellspacing=1>
+						<tr>
+							<td>
+								<figure>
+									<img src="Pics\Bishop-moves.jpg" alt="How a bishop moves" align="left" width="400"
+										height="400">
+									<figcaption>Bishops(3 points)</figcaption>
+								</figure>
+							</td>
+
+							<td>
+								<p class="border" ; font-size: 30px> Bishops are a minor piece like knights. They move
+									diagonally in any
+									direction, for any
+									number of squares. Bishops can only move on squares of one color but they
+									have a long range. In an open position, bishops can attack
+									squares on both sides of the board. A pair of bishops can be a powerful force.
+
+
+								</p>
+							</td>
+						</tr>
+					</table>
+					<br><br>
+
+
+					<table table border=0 cellspacing=1>
+						<tr>
+							<td>
+								<figure>
+									<img src="Pics\Rook-moves.jpg" alt="How a rook moves" align="left" width="400"
+										height="400">
+									<figcaption>Rooks(5 points)</figcaption>
+								</figure>
+							</td>
+
+							<td>
+								<p class="border" ; font-size: 30px> Rooks are a major piece.
+									They move in a straight line for any number of squares. As the game
+									goes on, rooks become more powerful as pieces are traded and the board opens up.
+									They play their most active role in the endgame.Rooks work best on open files, where
+									their full range is utilized. Doubling up rooks (putting one in front of the other
+									on the same file) is a
+									powerful attacking tool.
+								</p>
+							</td>
+						</tr>
+					</table>
+					<br><br>
+
+
+					<table table border=0 cellspacing=1>
+						<tr>
+							<td>
+								<figure>
+									<img src="Pics\Queen-moves.jpg" alt="How the queen moves" align="left" width="400"
+										height="400">
+									<figcaption>The Queen(9 points)</figcaption>
+								</figure>
+							</td>
+
+							<td>
+								<p class="border" ; font-size: 30px> The queen
+									is the most powerful piece on the board. Able to move both diagonally and in
+									straight lines.. The
+									queen can attack multiple pieces at the same time and
+									move easily across the board.
+							</td>
+						</tr>
+					</table>
+					<br><br>
+
+
+					<table table border=0 cellspacing=1>
+						<tr>
+							<td>
+								<figure>
+									<img src="Pics\King-moves.jpg" alt="How the king moves" align="left" width="400"
+										height="400">
+									<figcaption>The King(Invaluable)</figcaption>
+								</figure>
+							</td>
+
+							<td>
+								<p class="border" ; font-size: 30px> The king is the most important piece of the game.
+									If you let it get checkmated, than you lose. That is why many games revolve around
+									attacking your opponent's king while defending you own.
+									The king can move one square in any direction.
+							</td>
+						</tr>
+					</table>
+					<br>
+
+					<h1><b><u>
+								<center>Summary</center>
+							</u></b></h1>
+
+					<br>
+					<p>
+
+
+					<table border=10 align=center bgcolor=#222831>
+						<th> Piece </th>
+						<th> Point Value </th>
+						<th> Movement </th>
+						<th> Special Ability </th>
+						<th> Advantages/Disadvantages </th>
+						</tr>
+						<tr>
+							<td> Pawn </td>
+							<td> 1 </td>
+							<td> One square forward, or two from the starting position </td>
+							<td> Captures diagonally, en passant, promotion </td>
+							<td> + Can defend other pieces well <br>
+								- Limited mobility for attack </td>
+						</tr>
+						<tr>
+							<td> Knight </td>
+							<td> 3 </td>
+							<td> Like an "L", two squares forward and one to the right or left </td>
+							<td> Can jump over other pieces, cannot be blocked </td>
+							<td> + Can move easily in closed positions <br>
+								- Relatively short range </td>
+						</tr>
+						<tr>
+							<td> Bishop </td>
+							<td> 3 </td>
+							<td> Diagonally for any number of squares </td>
+							<td> None </td>
+							<td> + Can move long distances </td>
+						</tr>
+						<tr>
+							<td> Rook </td>
+							<td> 5 </td>
+							<td> In a straight line for any number of squares </td>
+							<td> Takes part in castling </td>
+							<td> + Moves long distances on both colors <br>
+								- Cannot move diagonally </td>
+						</tr>
+						<tr>
+							<td> Queen </td>
+							<td> 9 </td>
+							<td> In a straight line or diagonally, combines movement of bishop and rook </td>
+							<td> None </td>
+							<td> + Moves both diagonally and on straight lines <br>
+								- Vulnerable to attack from weaker pieces </td>
+						</tr>
+						<tr>
+							<td> King </td>
+							<td> Infinity </td>
+							<td> One square in any direction </td>
+							<td> Takes part in castling, checkmate is delivered to it </td>
+							<td> + A useful attacking piece in the endgame <br>
+								- Needs to be defended to avoid checkmate </td>
+						</tr>
+					</table>
+					</p>
+
+					<br><br><br>
+					<center>
+						<!--Copyright info-->
+						<hr>
+						<footer>
+							<p style="color: #eeeeee; font-size: 15px;">&copy; 2020 CHESS</p>
+							<p style="color: #eeeeee; font-size: 15px;">Contact us : 022 2363 2876</p>
+							<p style="color: #eeeeee; font-size: 15px;"><a href="index.html"
+									style="font-size: 15px; text-align: center; color : #32e0c4; font-weight: light;">Home
+									Page</a></p>
+
+						</footer>
+					</center>
+	</body>
+
+</html>
