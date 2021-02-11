@@ -9,24 +9,7 @@
 <body style="background-color:#393e46;">
 
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-	<script>
-		var mybutton = document.getElementById("myBtn");
-
-		window.onscroll = function () { scrollFunction() };
-
-		function scrollFunction() {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			} else {
-				mybutton.style.display = "none";
-			}
-		}
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-	</script>
+	<script src="button.js"></script>
 
 	<ul>
 
@@ -34,7 +17,6 @@
 		<bl><a href="rulesofgame.html">Game Rules</a></bl>
 		<bl><a href="notation.html">Notation</a></bl>
 		<bl><a href="tactics.html">Tactics</a></bl>
-		<bl><a href="playchess.html">Play Chess</a></bl>
 		<bl><a href="signup.html">Sign Up</a></bl>
 
 	</ul>
@@ -65,10 +47,11 @@
 			src="https://www.youtube.com/embed/rsr7ztL9Avo?list=PL9WYcwsWaJ7pjT1wY6oNV6MpasXChNlNI" frameborder="70"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen></iframe>
-		<br>
+		<br><br><br>
 
-		<p><a style="color:#32e0c4" href="playchess.html">Click here! to play Chess now!</a></p>
-		<br>
+		<a class="button" href="https://fritz.chessbase.com/en/Fritz">Click here! to play Chess now!!</a>
+
+		<br><br><br>
 
 		<!--Copyright info-->
 		<hr>

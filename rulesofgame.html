@@ -10,31 +10,13 @@
 	<body style="background-color:#393e46;">
 
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-		<script>
-			var mybutton = document.getElementById("myBtn");
-
-			window.onscroll = function () { scrollFunction() };
-
-			function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					mybutton.style.display = "block";
-				} else {
-					mybutton.style.display = "none";
-				}
-			}
-			function topFunction() {
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-			}
-		</script>
+		<script src="button.js"></script>
 
 		<ul>
 			<bl><a href="index.html">Home</a></bl>
 			<bl><a class="active" href="rulesofgame.html">Game Rules</a></bl>
 			<bl><a href="notation.html">Notation</a></bl>
 			<bl><a href="tactics.html">Tactics</a></bl>
-			<bl><a href="playchess.html">Play Chess</a></bl>
 			<bl><a href="signup.html">Sign Up</a></bl>
 
 		</ul>
